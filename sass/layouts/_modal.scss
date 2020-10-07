@@ -7,6 +7,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  overflow: auto;
+  
 
   &.is-hidden {
     visibility: hidden;
@@ -52,7 +54,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
+ 
   min-width: 450px;
   min-height: 609px;
 
