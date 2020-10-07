@@ -1,0 +1,35 @@
+.contacts-nav__link,
+.contacts-foot__link {
+  color: $main-color;
+}
+
+.contacts-nav {
+  margin-left: auto;
+
+  &__link {
+  padding: 16px 0;
+  display: inline-flex;
+  align-items: center;
+  }
+
+  &__link:hover &__icon {
+  fill: $accent-color;
+  }
+
+  &__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill $t-duration $t-t-function;
+  }
+
+
+}
+
+.contacts-foot {
+  padding-top: 9px;
+
+  & li:first-child {
+    margin-bottom: 9px;
+  }
+}
+

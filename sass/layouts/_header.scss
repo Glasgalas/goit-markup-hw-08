@@ -1,0 +1,66 @@
+
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $title-color;
+
+  &__link {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  
+  }
+
+}
+
+.contacts-nav {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+} 
+
+
+.site-nav__link.current {
+  color: $accent-color;
+}
+
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+
+.site-nav, .contacts-nav {
+  text-align: center;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}
+
+.nav-section {
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

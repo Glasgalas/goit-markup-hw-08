@@ -1,0 +1,37 @@
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $t-duration $t-t-function;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+    transition: fill $t-duration $t-t-function;
+  }
+
+  &__link:hover &__icon {
+    fill: $bg-color;
+  }
+
+}
+
