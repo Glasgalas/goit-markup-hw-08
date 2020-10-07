@@ -1,7 +1,20 @@
-
-
 header {
   border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  }
+}
+
+.site-nav, .contacts-nav {
+  text-align: center;
+
+
 }
 
 .site-nav {
@@ -15,7 +28,25 @@ header {
   position: relative;
   display: inline-block;
   margin-bottom: 40px;
-  
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 88px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 93px;
   }
 
 }
@@ -25,6 +56,10 @@ header {
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+     font-size: 12px; 
+    }
 } 
 
 
@@ -44,9 +79,7 @@ header {
 }
 
 
-.site-nav, .contacts-nav {
-  text-align: center;
-}
+
 
 .icon-mail {
   width: 16px;

@@ -6,10 +6,19 @@
 .contacts-nav {
   margin-left: auto;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 21px 0;
+      text-align: left;
+    }
+
   &__link {
   padding: 16px 0;
   display: inline-flex;
-  align-items: center;
+  align-items: center;   
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 0 0 10px 0;
+    }
   }
 
   &__link:hover &__icon {
