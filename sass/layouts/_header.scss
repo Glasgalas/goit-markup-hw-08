@@ -1,8 +1,16 @@
 header {
   border-bottom: 1px solid #ececec;
+  position: fixed;
+  background-color: #fff;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .header-nav {
+  position: relative;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -90,12 +98,16 @@ header {
 .current::after {
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -10px;
   content: "";
   width: 100%;
   height: 4px;
   background-color: $accent-color;
   border-radius: 2px;
+
+  @media screen and (min-width: 768px) {
+    bottom: -1px;
+  }
 }
 
 .icon-mail {
@@ -113,6 +125,5 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   
 }

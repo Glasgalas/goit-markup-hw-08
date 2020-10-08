@@ -11,10 +11,21 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer address {
@@ -24,6 +35,13 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $bg-color;
+}
+
+.footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 

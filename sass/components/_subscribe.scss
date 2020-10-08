@@ -20,6 +20,11 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
 
   &__btn {
@@ -41,5 +46,14 @@
   text-transform: uppercase;
   color: $bg-color;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe--flexbox {
+    display: flex;
+  }
+}

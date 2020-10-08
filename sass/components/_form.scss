@@ -129,6 +129,7 @@
   
     background-image: url(../images/check.svg);
     background-size: contain;
+    background-repeat: no-repeat;
 
     transition: all $t-duration $t-t-function;
   }
@@ -147,8 +148,6 @@
 
 .form__link-agreement {
   color: $accent-color;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
   display: inline-block;
 }
 
