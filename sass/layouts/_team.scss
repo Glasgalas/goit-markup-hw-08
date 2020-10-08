@@ -2,11 +2,16 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $team-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-items {
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     }
@@ -21,6 +26,23 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+      margin-right: 30px;
+    }
+  }
+
+  &__card:last-child {
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+
+  &__card {
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
     }
   }
 

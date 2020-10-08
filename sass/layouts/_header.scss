@@ -3,17 +3,25 @@ header {
 }
 
 .header-nav {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
   }
 }
 
 .site-nav, .contacts-nav {
   text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 
 }
 
@@ -29,11 +37,20 @@ header {
   display: inline-block;
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 0;
-    margin-right: 50px;
+    @media screen and (min-width: 768px)  {
+      margin-bottom: 0;
+      margin-right: 50px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-bottom: 0;
+    }   
   }
-}
+
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -47,8 +64,8 @@ header {
     display: flex;
     margin-bottom: 0;
     margin-left: 93px;
+    font-size: 14px;
   }
-
 }
 
 .contacts-nav {
@@ -60,6 +77,9 @@ header {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
      font-size: 12px; 
     }
+   @media screen and (min-width: 1200px) {
+     font-size: 14px;
+   }  
 } 
 
 
@@ -70,16 +90,13 @@ header {
 .current::after {
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -1px;
   content: "";
   width: 100%;
   height: 4px;
   background-color: $accent-color;
   border-radius: 2px;
 }
-
-
-
 
 .icon-mail {
   width: 16px;
@@ -96,4 +113,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
 }

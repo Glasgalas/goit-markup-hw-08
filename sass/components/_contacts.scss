@@ -17,7 +17,17 @@
   align-items: center;   
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 0;
+    }
+  }
+
+  &__item:first-child {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding: 0 0 10px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
     }
   }
 
@@ -30,8 +40,6 @@
   fill: currentColor;
   transition: fill $t-duration $t-t-function;
   }
-
-
 }
 
 .contacts-foot {

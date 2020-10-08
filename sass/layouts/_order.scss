@@ -54,18 +54,21 @@
 
 .order__title {
   margin-top: 0;
-  margin-bottom: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $bg-color;
+	color: $bg-color;
+	
 
   @media screen and (min-width: 1200px) {
         max-width: 696px;
         font-size: 44px;
-        line-height: 1.37;
+				line-height: 1.37;	
   }      
 }
 
