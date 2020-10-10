@@ -1,5 +1,6 @@
 .features {
   padding-top: 60px;
+  
 }
 
 .feature {
@@ -14,6 +15,9 @@
     flex-wrap: wrap;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &__title {
     margin-top: 0;
