@@ -645,7 +645,7 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .feature__title {
+  .feature {
     text-align: center;
   }
 }
@@ -1005,6 +1005,7 @@ header {
 @media screen and (min-width: 1200px) {
   .address {
     margin-right: 70px;
+    margin-bottom: 0;
     text-align: left;
   }
 }
@@ -1029,6 +1030,12 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-list {
+    margin-bottom: 0;
+  }
 }
 
 .join-list__item:not(:last-child) {
@@ -1407,6 +1414,7 @@ header {
   .projects {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
 

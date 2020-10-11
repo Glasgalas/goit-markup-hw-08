@@ -8,11 +8,12 @@
   }
 }
 
-.projects {
+.projects {  
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
   
   &__inner {
@@ -99,7 +100,7 @@
       width: calc((100% - 30px) / 2);
       margin-right: 30px;
     }
-    
+
     .projects__item:nth-child(2n) {
       margin-right: 0;
     }

@@ -35,7 +35,6 @@
       text-align: center;
     }
       
-  }
 
   &__text {
     margin: 0;
@@ -106,5 +105,6 @@
   &__item:nth-child(4)::before {
     background-image: url(../images/astronaut.svg);
   }
-}
 
+
+}
