@@ -612,6 +612,12 @@ header {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
+}
+
 .feature {
   margin-bottom: 60px;
 }
@@ -658,7 +664,7 @@ header {
 }
 
 .feature__item::before {
-  content: "";
+  content: '';
   display: block;
   height: 120px;
   background-color: #f5f4fa;
@@ -695,7 +701,7 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature__item:nth-last-child(-n+2) {
+  .feature__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
