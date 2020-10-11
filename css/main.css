@@ -1474,6 +1474,7 @@ header {
 
 .projects__link {
   text-decoration: none;
+  display: block;
 }
 
 .projects__link:hover, .projects__link:focus {
